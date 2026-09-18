@@ -1,4 +1,4 @@
-name: .NET CI
+﻿name: .NET CI
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4   # ✅ updated from @v3
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4   # ✅ updated from @v3
       with:
         dotnet-version: 8.0.x
 
