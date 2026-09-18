@@ -20,7 +20,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore ./K_Mart_LongestIncreasingSubsequence.sln
+      run: dotnet restore ./K_Mart_LongestIncreasingSubsequence/K_Mart_LongestIncreasingSubsequence.sln
 
     - name: Build
       run: dotnet build --no-restore --configuration Release
