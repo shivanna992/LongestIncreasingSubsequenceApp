@@ -1,4 +1,4 @@
-name: .NET CI
+﻿name: .NET CI
 
 on:
   push:
@@ -27,3 +27,6 @@ jobs:
 
     - name: Run tests
       run: dotnet test --no-build --verbosity normal
+    # 🔥 New Docker build step
+    - name: Build Docker image
+      run: docker build -t kmart-longestsubsequence .
