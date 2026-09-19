@@ -12,16 +12,15 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4  
+      uses: actions/checkout@v3
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4  
+      uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      working-directory: ./K_Mart_LongestIncreasingSubsequence
-      run: dotnet restore K_Mart_LongestIncreasingSubsequence.sln
+      run: dotnet restore
 
     - name: Build
       run: dotnet build --no-restore --configuration Release
