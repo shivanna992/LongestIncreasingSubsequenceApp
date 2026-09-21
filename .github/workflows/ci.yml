@@ -29,4 +29,5 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     # 🔥 New Docker build step
     - name: Build Docker image
+      working-directory: ./
       run: docker build -t kmart-longestsubsequence .
