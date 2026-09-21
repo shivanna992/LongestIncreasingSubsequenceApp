@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test LongestIncreasingSubsequenceApp.Tests/LongestIncreasingSubsequenceApp.Tests.csproj --no-build --verbosity normal
     # 🔥 New Docker build step
     - name: Build Docker image
       working-directory: ./
