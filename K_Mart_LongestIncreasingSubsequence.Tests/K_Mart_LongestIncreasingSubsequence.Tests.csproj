@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\K_Mart_LongestIncreasingSubsequence\K_Mart_LongestIncreasingSubsequence.csproj" />
+		<ProjectReference Include="..\K_Mart_LongestIncreasingSubsequence.csproj" />
 	</ItemGroup>
 
 </Project>
