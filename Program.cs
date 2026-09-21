@@ -1,9 +1,9 @@
 ﻿using K_Mart_LongestIncreasingSubsequence.Services;
 using System;
 
-class Program
+partial  class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         Console.WriteLine("Enter numbers separated by spaces:");
         string? input = Console.ReadLine();

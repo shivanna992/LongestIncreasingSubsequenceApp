@@ -1,14 +1,53 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="xunit.assert" Version="2.9.3" />
-  </ItemGroup>
+    <!-- Removed explicit Compile includes for generated files to avoid duplicate items.
+		 The SDK includes generated files implicitly. -->
+
+	<ItemGroup>
+	  <Content Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.csproj.FileListAbsolute.txt" />
+	  <Content Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.sourcelink.json" />
+	  <Content Include="obj\K_Mart_LongestIncreasingSubsequence.csproj.nuget.dgspec.json" />
+	  <Content Include="obj\project.assets.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+	  <PackageReference Include="xunit" Version="2.9.3" />
+	  <PackageReference Include="xunit.assert" Version="2.9.3" />
+	  <PackageReference Include="xunit.extensibility.core" Version="2.9.3" />
+	  <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="bin\Debug\net8.0\" />
+	  <Folder Include="obj\Debug\net8.0\refint\" />
+	  <Folder Include="obj\Debug\net8.0\ref\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include=".github\copilot-instructions.md" />
+	  <None Include=".github\workflows\ci.yml" />
+	  <None Include="K_Mart_LongestIncreasingSubsequence.Tests\K_Mart_LongestIncreasingSubsequence.Tests.csproj" />
+	  <None Include="obj\Debug\net8.0\apphost.exe" />
+	  <None Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.assets.cache" />
+	  <None Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.csproj.AssemblyReference.cache" />
+	  <None Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.csproj.BuildWithSkipAnalyzers" />
+	  <None Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.csproj.CoreCompileInputs.cache" />
+	  <None Include="obj\Debug\net8.0\K_Mart_LongestIncreasingSubsequence.GeneratedMSBuildEditorConfig.editorconfig" />
+	  <None Include="obj\K_Mart_LongestIncreasingSubsequence.csproj.nuget.g.props" />
+	  <None Include="obj\K_Mart_LongestIncreasingSubsequence.csproj.nuget.g.targets" />
+	  <None Include="obj\project.nuget.cache" />
+	</ItemGroup>
 
 </Project>
